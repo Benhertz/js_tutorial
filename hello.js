@@ -1,3 +1,3 @@
     console.log("hello, world!");
-    console.log("hello, world!", "how's it going?");
+    console.log("hello, world!", "how's\nit going?");
     
