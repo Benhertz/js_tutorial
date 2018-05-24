@@ -14,4 +14,27 @@ If this be error and upon me proved,
 I never writ, nor no man ever loved.`;
 let uniques = {}
 let words = sonnet.match(/[\w']+/g);
-console.log(words);
+
+for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    if (uniques[word]) {
+        uniques[word] += 1;
+    }
+    else {
+        uniques[word] = 1;
+    }
+}
+console.log(uniques);
+
+let square = (num) => {
+    num = num * num;
+    return num;
+}
+
+function dayOfTheWeek(date) {
+    const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday",
+        "Thursday", "Friday", "Saturday"
+    ];
+    return daysOfTheWeek[date.getDay()];
+}
+console.log(dayOfTheWeek(new Date));
