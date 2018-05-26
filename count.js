@@ -38,3 +38,9 @@ function dayOfTheWeek(date) {
     return daysOfTheWeek[date.getDay()];
 }
 console.log(dayOfTheWeek(new Date));
+console.log("\n");
+
+let array = ["bat", 42, 33.3, "bitch", "help"];
+array.forEach(function(element) {
+    console.log(element);
+});
