@@ -14,6 +14,12 @@ a.forEach(function(num) {
 });
 
 a = ["ant", "bat", "cat", 42];
-a.forEach(element => {
+a.forEach((element) => {
     console.log(element);
 });
+
+let circleArea = r => Math.PI * r * r;
+console.log(circleArea(4));
+
+let now = new Date();
+console.log(now.getDay());

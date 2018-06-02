@@ -5,4 +5,4 @@ function dayOfTheWeek(date) {
     ];
     return daysOfTheWeek[date.getDay()];
 }
-console.log(dayOfTheWeek(new Date));
+// console.log(dayOfTheWeek(new Date));
